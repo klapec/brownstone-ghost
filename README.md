@@ -6,7 +6,7 @@ Minimal theme for Ghost blogging platform.
 
 1. Place the theme folder into your ``/content/themes`` Ghost directory,
 2. Restart Ghost (if running),
-3. Set ``Solid`` theme in your Ghost Admin settings.
+3. Set ``Brownstone`` theme in your Ghost Admin settings.
 
 ## Development
 
