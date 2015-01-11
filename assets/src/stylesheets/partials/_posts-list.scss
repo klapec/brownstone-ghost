@@ -1,0 +1,49 @@
+/****************************************************
+*  Posts list
+*/
+
+.post-preview {
+  margin-bottom: 2em;
+}
+
+.post-preview__date {
+  font-size: $font-size-small;
+  color: $color-gray-dark;
+}
+
+.post-preview__title {
+  margin: .2em 0;
+  font-size: 1.4em;
+}
+
+.post-preview__text {
+  margin-bottom: 0;
+
+  &::after {
+    content: " ...";
+  }
+}
+
+.post-preview__tags {
+  display: block;
+  font-size: $font-size-small;
+  margin: .5em 0;
+
+  a {
+    font-weight: normal;
+    color: $color-gray-dark;
+    
+    &::before {
+      content: "#";
+    }
+  }
+}
+
+
+
+/****************************************************
+*  Media queries
+*/
+
+// @include media("<=tablet") {
+// }

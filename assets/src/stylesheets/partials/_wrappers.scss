@@ -1,0 +1,49 @@
+/****************************************************
+*  Wrappers
+*/
+
+.wrapper--main {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper--sidebar {
+  min-width: 14em;
+  min-height: 100vh;
+  padding: 2em;
+  border-right: $border-base;
+  text-align: center;
+}
+
+.wrapper--content {
+  max-width: 44em;
+  padding: 2em;
+  min-width: 0; // Fix for Firefox 34+ - https://developer.mozilla.org/en-US/Firefox/Releases/34/Site_Compatibility#CSS (spec has changed)
+}
+
+
+
+/****************************************************
+*  Media queries
+*/
+
+@include media("<=tablet") {
+  .wrapper--main {
+    flex-direction: column; // Wrapping not supported by Android <=4.3 browsers
+    max-width: 100%;
+  }
+
+  .wrapper--sidebar {
+    min-width: 0;
+    min-height: 0;
+    border-right: none;
+    border-bottom: $border-base;
+    flex-grow: 1;
+  }
+
+  .wrapper--content {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}

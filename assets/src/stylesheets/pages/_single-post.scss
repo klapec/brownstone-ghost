@@ -1,0 +1,35 @@
+/****************************************************
+*  Single post page
+*/
+
+.post-date {
+  font-size: $font-size-small;
+  color: $color-gray-dark;
+}
+
+.post-title {
+  margin: 0 0 .5em 0;
+}
+
+.post-tags {
+  display: block;
+  font-size: $font-size-small;
+  margin: .5em 0;
+
+  a {
+    font-weight: normal;
+    color: $color-gray-dark;
+    
+    &::before {
+      content: "#";
+    }
+  }
+}
+
+/****************************************************
+*  Media queries
+*/
+
+@include media("<=tablet") {
+}
+

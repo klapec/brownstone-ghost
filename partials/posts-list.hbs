@@ -1,0 +1,14 @@
+<div class="wrapper--content">
+  <main class="post-list">
+    {{#foreach posts}}
+    <article class="post-preview">
+      <span class="post-preview__date">{{date published_at format="MMMM DD, YYYY"}}</span>
+      <h1 class="post-preview__title"><a href="{{url}}" title="{{title}}">{{title}}</a></h1>
+      <p class="post-preview__text">{{excerpt}}</p>
+      <span class="post-preview__tags">{{tags separator=" &bull; "}}</span>
+      <a href="{{url}}" title="Read this post" class="post-preview__more">Read more &#8594;
+      </a>
+    </article>
+    {{/foreach}}
+  </main>
+</div>

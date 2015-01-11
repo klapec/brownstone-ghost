@@ -1,0 +1,33 @@
+/****************************************************
+*  Icons
+*/
+
+.icon {
+  fill: $color-black;
+}
+
+.icon-sidebar {
+  height: 1.4em;
+  width: 1.4em;
+  padding-right: .1em;
+  transform: translateY(.2em);
+}
+
+.icon-site-logo {
+  height: 8em;
+  width: 7em;
+  padding: 0;
+  transition: fill .3s;
+}
+
+
+/****************************************************
+*  Media queries
+*/
+
+@include media("<=tablet") {
+  .icon-site-logo {
+    height: 6em;
+    width: 5em;
+  }
+}

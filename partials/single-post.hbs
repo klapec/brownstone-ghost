@@ -1,0 +1,12 @@
+{{#post}}
+<div class="wrapper--content">
+  <article class="post">
+    <span class="post-date">{{date published_at format="MMMM DD, YYYY"}}</span>
+    <h1 class="post-title">{{title}}</h1>
+    <span class="post-tags">{{tags separator=" &bull; "}}</span>
+    <section class="post-text">
+      {{content}}
+    </section>
+  </article>
+</div>
+{{/post}}

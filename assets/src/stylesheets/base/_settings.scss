@@ -1,0 +1,62 @@
+/****************************************************
+*  Settings
+*/
+
+/****************************************************
+*  Typography
+*/
+
+/* Fontfaces */
+$font-family: 'Europa', sans-serif;
+
+/* Font sizes */
+$font-size-base: 1em;
+$font-size-h1: $font-size-base * 2.25;
+$font-size-h2: $font-size-base * 1.6;
+$font-size-h3: $font-size-base * 1.3;
+$font-size-h4: $font-size-base * .8;
+$font-size-small: $font-size-base * .8;
+
+$font-size-base--tablet: $font-size-base * .9;
+
+/* Line height */
+$line-height-base: 1.5;
+$line-height-header: 1.25;
+
+
+
+/****************************************************
+*  Colors
+*/
+
+/* Base palette */
+$color-black: rgba(64, 59, 51, 1);
+$color-gray-dark: rgb(136, 126, 109);
+$color-gray: rgba(220, 220, 220, 1);
+$color-brown: rgba(148, 140, 117, 1);
+$color-white: rgba(247, 245, 239, 1);
+
+$color-transparent: rgba(255, 255, 255, 0);
+
+/* Background colors */
+$color-background-base: $color-white;
+
+/* Font colors */
+$color-font-base: $color-black;
+$color-font-accent: $color-brown;
+$color-font-header: $color-white;
+
+/* Link colors */
+$color-link-base: $color-font-base;
+$color-link--hover: $color-font-accent;
+
+/* Border colors */
+$color-border-base: $color-gray;
+
+
+
+/****************************************************
+*  Misc
+*/
+
+$border-base: 1px solid $color-border-base;

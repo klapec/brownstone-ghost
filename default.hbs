@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{@blog.description}}">
+    <meta name="author" content="Andrzej Kłapeć">
+    <meta name="keywords" content="Ghost, theme">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:site_name" content="{{@blog.title}}">
+    <meta property="og:title" content="{{meta_title}}">
+    <meta property="og:url" content="{{@blog.url}}">
+    <meta property="og:image" content="/favicon-192x192.png">
+    <meta property="og:type" content="website">
+    {{#if post}}
+    <meta property="og:description" content="{{date post.published_at format='DD MMM YYYY'}} {{post.title}}" />
+    {{else}}
+    <meta property="og:description" content="{{@blog.description}}"/>
+    {{/if}}
+    <link href="{{asset "dist/stylesheets/main.min.css"}}" rel="stylesheet" type="text/css">
+    <script src="//use.typekit.net/pao3bmu.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    {{ghost_head}}
+  </head>
+  <body class="{{body_class}}">
+    <div class="wrapper--main animated fadeIn">
+      {{{body}}}
+    </div>
+    {{ghost_foot}}
+    <script src="{{asset "dist/scripts/vendors.min.js"}}"></script>
+    <script src="{{asset "dist/scripts/main.min.js"}}"></script>
+  </body>
+</html>

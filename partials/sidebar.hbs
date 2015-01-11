@@ -1,0 +1,29 @@
+<div class="wrapper--sidebar">
+  <header class="header-main">
+    <div class="header-info">
+      {{#if @blog.logo}}
+        <a href="/" title="Home" class="helper-noborders">
+          <img src="{{@blog.logo}}" class="header-photo animated fadeInDown">
+        </a>
+      {{else}}
+        <a href="/" title="Home" class="helper-noborders">
+          <svg role="img" title="logo" class="icon icon-site-logo animated fadeInDown"><use xlink:href="/assets/dist/svg/sprite.svg#icon-logo"></use></svg> 
+        </a>
+      {{/if}}
+      <h3 class="header-title">
+        <a href="/" title="Home">{{@blog.title}}</a>
+      </h3>
+      <p class="header-desc">{{@blog.description}}</p>
+    </div>
+    <div class="header-social">
+      <span>Check out my <a href="http://github.com/klapec" title="My Github profile">Github</a> profile</span>
+      <span>Contact me via <a href="mailto:andrzej.klapec@gmail.com" title="E-mail">e-mail</a></span> 
+    </div>
+  </header>
+  <footer class="footer-main">
+    <span>Built with 
+      <svg role="img" title="Love!" class="icon icon-sidebar"><use xlink:href="/assets/dist/svg/sprite.svg#icon-heart"></use></svg> 
+      using <a href="//ghost.org">Ghost</a>.</span>
+    <span>Source available on <a href="//github.com/klapec/solid-ghost">Github</a>.</span>
+  </footer>
+</div>

@@ -1,0 +1,49 @@
+/****************************************************
+*  Sidebar
+*/
+
+/* Header */
+.header-photo {
+  width: 10em;
+}
+
+.header-title {
+  font-size: 1.5em;
+}
+
+.header-desc {
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.header-social span {
+  display: block;
+}
+
+/* Footer */
+.footer-main {
+  margin-top: 2em;
+
+  span {
+    display: block;
+    font-size: $font-size-small;
+    color: $color-gray-dark;
+  }
+}
+
+
+
+/****************************************************
+*  Media queries
+*/
+
+@include media("<=tablet") {
+
+  .header-photo {
+    width: 6em;
+  }
+
+  .header-desc {
+    font-size: $font-size-base--tablet;
+  }
+}
